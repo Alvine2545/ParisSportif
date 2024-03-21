@@ -27,3 +27,10 @@ Le différentes classes:
     6. D’après les spécifications du sujet, on a 4 types de sports d’où la création les 4 classes spécifiques à la classe TypeSport
     7. Un pari à deux spécificités : on fait soit un parie simple soit un parie avancer
     8. Le bookmaker et le tiers ajoute et font des mises à jour sur les évènements sportifs
+
+
+
+
+
+
+    
