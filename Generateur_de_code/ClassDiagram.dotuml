@@ -1,0 +1,179 @@
+ClassDiagram [frame=true framecolor=steelblue label="Class Diagram"] {
+
+abstract class Parieur {
+
+private id : int
+
+private email : string
+
+private nom: string
+
+private prenom: string
+
+private password : string
+
+private jetons: long
+
+private capitalInitial: int
+
+private mise: long
+
+public login(email: string, password:string)
+
+public parier(montant: int, evenement: Evenement, typePari: TypePari, resultatPari: String): boolean
+
+public validerMontant(montant: long)
+
+public consulterSolde()
+
+public rechargerCompte(montant: long)
+
+}
+
+class TypeSport {
+
+private id: int
+
+private nom : string
+
+private description : string
+
+}
+
+class Football {
+
+private id : int
+
+private regle: string
+
+}
+
+class CourseCheveau {
+
+private id : int
+
+private regle: string
+
+}
+
+class Tennis {
+
+private id : int
+
+private regle: string
+
+}
+
+class BasketBall {
+
+private id : int
+
+private regle: string
+
+}
+
+class Pari {
+
+private id : int
+
+private Idparieur: int
+
+private Idevenement: int
+
+private IdtypePari: int
+
+private montant: long
+
+private cotes: string
+
+private resultatPari: String
+
+}
+
+class EvenementSportif {
+
+private id : int
+
+private dateDebut: date
+
+private dateFin: date
+
+private cotes: string
+
+private description: string
+
+}
+
+class Simple {
+
+private id : int
+
+}
+
+class Avance {
+
+private id : int
+
+}
+
+class Bookmaker {
+
+private id : int
+
+private email : string
+
+private nom: string
+
+private prenom: string
+
+private password : string
+
+public proposerEvenement(): void
+
+public definirParametres(): void
+
+public miseAJourCote(evenement, typePari, resultatPari)
+
+}
+
+class Tiers {
+
+private id : int
+
+public ajouterDonnees()
+
+private email : string
+
+private nom: string
+
+private prenom: string
+
+private password : string
+
+public mettreAJourDonnees()
+
+}
+
+Football -g-> TypeSport
+
+BasketBall -g-> TypeSport
+
+CourseCheveau -g-> TypeSport
+
+Tennis -g-> TypeSport
+
+Avance -g-> Pari
+
+Simple -g-> Pari
+
+Pari "0..*" -- "1..1" Parieur : "Placer"
+
+Pari "1..*" -- "1..1" TypeSport : "Concerne"
+
+Bookmaker "1..1" -- "0..*" EvenementSportif : "Gère"
+
+Tiers "1..1" -- "0..*" EvenementSportif : "Mettre à jour"
+
+EvenementSportif "0..*" -- "1..*" Pari : "Concerne"
+
+}

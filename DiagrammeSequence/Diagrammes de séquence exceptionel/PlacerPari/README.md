@@ -1,12 +1,15 @@
+## Modélisation UML
 
-##Scénaires alternatifs
+### Diagramme de séquence
+**Cas d'utilisation: Placer pari**
+-Scénario Nominal
+1. Le parieur demande la page pour placer un pari
+2. L’application affiche une page de connexion
+3. Le parieur se connecte en utilisant son identifiant et mot de passe
+4. L’application vérifie si les informations sont correctes et lui envoies la  page avec le formulaire de placement du pari.
+5. Le parieur remplit et envoie le formulaire de pari avec le montant, l'événement, le type de pari et le résultat parié au Système.
+6. Le Système valide d'abord le montant pour s'assurer que le Parieur dispose de suffisamment de fonds; vérifie le solde du Parieur pour s'assurer qu'il peut placer le pari; calcule la cote pour l'événement et le type de pari spécifié.
 
-Ce diagramme de séquence capturent les interactions entre le parieur et le Système, pour les cas d'utilisation **Placer pari** sur un événement sportif et la gestion des exceptions liées à la validation du montant du pari.
-## On a deux scénario exceptionels:
-    Le montant du pari est invalide : Le système affiche un message d'erreur et le processus de pari est annulé.
-    Le parieur n'a pas suffisamment de fonds : Le système refuse le pari et informe le parieur du solde insuffisant.
-
-    Le Parieur envoie une demande de pari avec un montant, un événement, un type de pari et un résultat parié au Système.
-    Le Système valide d'abord le montant pour s'assurer qu'il est valide.
-    Si le montant est invalide, le Parieur reçoit un message d'erreur et le Système renvoie false pour indiquer que la validation a échoué.
-    Si le montant est valide, le Système renvoie true pour indiquer que la validation a réussi.
+7.Le Parieur est informé de la cote et le montant est débité de son compte.
+8.Le Système met à jour les informations sur le pari dans le système.
+9.Le Parieur reçoit une confirmation que le pari a été placé avec succès.
