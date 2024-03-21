@@ -5,7 +5,7 @@ Ce projet vise à modéliser et à développer un système de paris sportifs en 
 ##ALLADAKAN Eunice
 ##AMOUSSOU-GUENOU Magnolia
 
-#### Lien du projet : https://www.loom.com/share/f740c0c24ec34f6eb7b8100025d94e64
+#### Lien du projet : https://www.loom.com/share/1c2ec55138df468587b508d3df5e32ac?sid=84be37fd-a27d-48c2-94be-3167ca70c08f
 
 ##Sur la branche main se trouve la modélisation UML et la description selon l'arboresecnce
 
