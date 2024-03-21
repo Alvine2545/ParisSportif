@@ -18,12 +18,7 @@ public class TypeSport {
     public TypeSport() {
     }
 
-    public TypeSport(String nom, String description) {
-        this.nom = nom;
-        this.description = description;
-    }
-
-    // Ajoutez ici les autres attributs, getters et setters si nécessaire
+    // Getters et setters
 
     public int getId() {
         return id;

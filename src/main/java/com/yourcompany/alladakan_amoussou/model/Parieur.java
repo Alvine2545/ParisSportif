@@ -28,6 +28,35 @@ public class Parieur {
     public Parieur() {
     }
 
+    // Méthode pour se connecter
+    public boolean login(String email, String password) {
+        // Implémenter la logique de connexion
+        return false; // Retourner vrai si la connexion est réussie, faux sinon
+    }
+
+    // Méthode pour placer un pari
+    public boolean parier(int montant, EvenementSportif evenement, TypeSport typePari, String resultatPari) {
+        // Implémenter la logique de placement de pari
+        return false; // Retourner vrai si le pari est placé avec succès, faux sinon
+    }
+
+    // Méthode pour valider le montant du pari
+    public void validerMontant(long montant) {
+        // Implémenter la logique de validation du montant du pari
+    }
+
+    // Méthode pour consulter le solde
+    public void consulterSolde() {
+        // Implémenter la logique de consultation du solde
+    }
+
+    // Méthode pour recharger le compte
+    public void rechargerCompte(long montant) {
+        // Implémenter la logique de rechargement du compte
+    }
+
+    // Getters et setters
+
     public int getId() {
         return id;
     }
